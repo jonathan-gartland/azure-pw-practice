@@ -8,7 +8,7 @@ test.describe("Example to demonstrate handling of Shadow DOM in Playwright", () 
     await page.locator("#input").fill("Bukowski");
     await page.keyboard.press("Enter");
     await expect(
-      page.locator("h2:text('Love is a Dog From Hell')"),
+      page.locator("h2:text('Post Office')"),
     ).toBeVisible();
   });
 });
